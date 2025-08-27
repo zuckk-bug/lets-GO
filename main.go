@@ -9,8 +9,15 @@ func main() {
 	// name = "Chirag"
 	// fmt.Println(name)
 
+	// sum := 0
+	// for i := 0; i < 10; i++ {
+	// 	sum += i
+	// }
+	// fmt.Println(sum)
+
 	sum := 0
-	for i := 0; i < 10; i++ {
+	var i int
+	for i = range 10 {
 		sum += i
 	}
 	fmt.Println(sum)
