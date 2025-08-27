@@ -3,15 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World!")
-	var name string
-	fmt.Println(name)
-	name = "Chirag"
-	fmt.Println(name)
-}
+	// fmt.Println("Hello World!")
+	// var name string
+	// // fmt.Println(name)
+	// name = "Chirag"
+	// fmt.Println(name)
 
-var name = "Chirag"
+	sum := 0
+	for i := 0; i < 10; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
 
-func printName() {
-	fmt.Println(name)
 }
