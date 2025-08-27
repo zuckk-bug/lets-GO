@@ -15,11 +15,17 @@ func main() {
 	// }
 	// fmt.Println(sum)
 
-	sum := 0
-	var i int
-	for i = range 10 {
-		sum += i
-	}
-	fmt.Println(sum)
+	//
+
+	defer func() {
+		sum := 0
+		for i := 0; i < 100; i++ {
+			sum += i
+
+		}
+		fmt.Println(sum)
+	}()
+
+	fmt.Println("Hello World!")
 
 }
