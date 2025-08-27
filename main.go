@@ -26,6 +26,10 @@ func main() {
 		fmt.Println(sum)
 	}()
 
-	fmt.Println("Hello World!")
+	sum := 0
+	for i := 0; i < 100000000000; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
 
 }
